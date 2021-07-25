@@ -1,0 +1,91 @@
+/*****************************************************
+ * Magic Mirror                                      *
+ * Custom CSS                                        *
+ *                                                   *
+ * By Michael Teeuw http://michaelteeuw.nl           *
+ * MIT Licensed.                                     *
+ *                                                   *
+ * Add any custom CSS below.                         *
+ * Changes to this files will be ignored by GIT. 	 *
+ *****************************************************/
+
+body {
+  font-family: "DejaVu Sans Condensed";
+}
+
+header {
+  font-family: "DejaVu Sans Condensed";
+}
+
+@font-face {
+  font-family: "DejaVu Sans";
+  font-style: normal;
+  font-weight: normal;
+  src: local("DejaVu Sans"), url("../fonts/DejaVuSans.woff") format("woff");
+}
+
+@font-face {
+  font-family: "DejaVu Sans Oblique";
+  font-style: normal;
+  font-weight: normal;
+  src: local("DejaVu Sans Oblique"), url("../fonts/DejaVuSans-Oblique.woff") format("woff");
+}
+
+@font-face {
+  font-family: "DejaVu Sans Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("DejaVu Sans Bold"), url("../fonts/DejaVuSans-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "DejaVu Sans Bold Oblique";
+  font-style: normal;
+  font-weight: normal;
+  src: local("DejaVu Sans Bold Oblique"), url("../fonts/DejaVuSans-BoldOblique.woff") format("woff");
+}
+
+@font-face {
+  font-family: "DejaVu Sans Condensed";
+  font-style: normal;
+  font-weight: normal;
+  src: local("DejaVu Sans Condensed"), url("../fonts/DejaVuSansCondensed.woff") format("woff");
+}
+
+@font-face {
+  font-family: "DejaVu Sans Condensed Oblique";
+  font-style: normal;
+  font-weight: normal;
+  src: local("DejaVu Sans Condensed Oblique"), url("../fonts/DejaVuSansCondensed-Oblique.woff") format("woff");
+}
+
+@font-face {
+  font-family: "DejaVu Sans Condensed Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("DejaVu Sans Condensed Bold"), url("../fonts/DejaVuSansCondensed-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "DejaVu Sans Condensed Bold Oblique";
+  font-style: normal;
+  font-weight: normal;
+  src: local("DejaVu Sans Condensed Bold Oblique"), url("../fonts/DejaVuSansCondensed-BoldOblique.woff") format("woff");
+}
+
+.thin {
+  font-family: "DejaVu Sans Condensed";
+}
+
+.light {
+  font-family: "DejaVu Sans Condensed";
+  font-weight: 300;
+}
+
+.regular {
+  font-family: "DejaVu Sans";
+}
+
+.bold {
+  font-family: "DejaVu Sans Bold";
+}
