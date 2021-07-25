@@ -97,6 +97,7 @@ Module.register("calendar", {
 
 		this.config.calendars.forEach((calendar) => {
 			calendar.url = calendar.url.replace("webcal://", "http://");
+			calendar.url = calendar.url.replace("<year>", new Date().getFullYear());
 
 			const calendarConfig = {
 				maximumEntries: calendar.maximumEntries,
@@ -204,7 +205,6 @@ Module.register("calendar", {
 					const dateCell = document.createElement("td");
 					dateCell.colSpan = "3";
 					dateCell.innerHTML = dateAsString;
-					dateCell.style.paddingTop = "10px";
 					dateRow.appendChild(dateCell);
 					wrapper.appendChild(dateRow);
 
