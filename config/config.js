@@ -91,88 +91,68 @@ var config = {
                 ]
             }
         },*/
-        // {
-        // 	module: "compliments",
-        // 	position: "lower_third",
-        // 	classes: "default everyone",
-        // 	compliments: {
-        // 		anytime: [
-        // 			"Ak sa ti nepáči, kde si, pohni sa, nie si strom.",
-        // 			"Nehovor, že to nejde. Radšej povedz, že to zatiaľ neovládaš.",
-        // 			"Čo by som bez teba robil?",
-        // 			"Vtipy sú omnoho zábavnejšie, keď ich hovoríš ty.",
-        // 			"Máš dobrý vkus na oblečenie!"
-        // 		],
-        // 		morning: [
-        // 			"Kto chce hýbať svetom, musí pohnúť najskôr sám sebou.",
-        // 			"Neznič si dobrý deň premýšľaním o zlom včerajšku.",
-        // 			"Každé ráno na svoje konto dostaneš 24 hodín. Záleží iba na tebe, ako ich využiješ.",
-        // 			"Žeby bol čas na kávu?",
-        // 			"Dnes je pekne, dnes by to išlo!"
-        // 		],
-        // 		afternoon: [
-        // 			"Jaskyňa do ktorej sa bojíš vstúpiť, ukrýva poklad ktorý hľadáš.",
-        // 			"Ty si ešte lepší ako jednorožec, pretože si skutočný.",
-        // 			"Ten, kto ťa vychoval, si zaslúži medailu za výborne odvedenú prácu."
-        // 		],
-        // 		evening: [
-        // 			"Sedemkrát spadni, osemkrát vstaň.",
-        // 			"V tých šatách vyzeráš naozaj úžasne.",
-        // 			"Čo tak jedho chladené?",
-        // 			"Zaslúžený oddych po dobre odvedenej práci."
-        // 		]
-        // 	}
-        // },
-        // {
-        // 	module: "currentweather",
-        // 	position: "top_right",
-        // 	classes: "default everyone",
-        // 	config: {
-        // 		location: "Bratislava",
-        // 		locationID: "3060972",  //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
-        // 		appid: "1486088161937d2d1e39359d6f48fd37",
-        // 		lang: "sk"
-        // 	}
-        // },
-        // {
-        // 	module: "weatherforecast",
-        // 	position: "top_right",
-        // 	header: "Predpoveď počasia",
-        // 	classes: "default everyone",
-        // 	config: {
-        // 		location: "Bratislava",
-        // 		locationID: "3060972",  //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
-        // 		appid: "1486088161937d2d1e39359d6f48fd37",
-        // 		lang: "sk"
-        // 	}
-        // },
-        // {
-        // 	module: "newsfeed",
-        // 	position: "bottom_bar",
-        // 	classes: "Filip",
-        // 	config: {
-        // 		feeds: [
-        // 			{
-        // 				title: "TA3",
-        // 				url: "http://www.ta3.com/rss/all/vsetky-novinky.html"
-        // 			},
-        // 			{
-        // 				title: "DenníkN",
-        // 				url: "http://www.dennikn.sk/minuta/feed/?cat=2386"
-        // 			},
-        // 			{
-        // 				title: "Pravda",
-        // 				url: "http://spravy.pravda.sk/rss/xml/"
-        // 			}
-        // 		],
-        // 		showSourceTitle: true,
-        // 		showPublishDate: true,
-        // 		broadcastNewsFeeds: true,
-        // 		broadcastNewsUpdates: true,
-        // 		ignoreOldItems: true,
-        // 		showDescription: true
-        // 	}
-        // },
+        {
+        	module: "compliments",
+        	position: "lower_third",
+        	classes: "default everyone",
+            config: {
+                compliments: {
+                    anytime: [
+                        "Ak sa ti nepáči, kde si, pohni sa, nie si strom.",
+                        "Nehovor, že to nejde. Radšej povedz, že to zatiaľ neovládaš.",
+                        "Čo by som bez teba robil?",
+                        "Vtipy sú omnoho zábavnejšie, keď ich hovoríš ty.",
+                        "Máš dobrý vkus na oblečenie!"
+                    ],
+                    morning: [
+                        "Kto chce hýbať svetom, musí pohnúť najskôr sám sebou.",
+                        "Neznič si dobrý deň premýšľaním o zlom včerajšku.",
+                        "Každé ráno na svoje konto dostaneš 24 hodín. Záleží iba na tebe, ako ich využiješ.",
+                        "Žeby bol čas na kávu?",
+                        "Dnes je pekne, dnes by to išlo!"
+                    ],
+                    afternoon: [
+                        "Jaskyňa do ktorej sa bojíš vstúpiť, ukrýva poklad ktorý hľadáš.",
+                        "Ty si ešte lepší ako jednorožec, pretože si skutočný.",
+                        "Ten, kto ťa vychoval, si zaslúži medailu za výborne odvedenú prácu."
+                    ],
+                    evening: [
+                        "Sedemkrát spadni, osemkrát vstaň.",
+                        "V tých šatách vyzeráš naozaj úžasne.",
+                        "Čo tak jedho chladené?",
+                        "Zaslúžený oddych po dobre odvedenej práci."
+                    ]
+                }
+            }
+        },
+        {
+        	module: "newsfeed",
+        	position: "bottom_bar",
+        	classes: "default everyone",
+        	config: {
+                updateInterval: "15000",
+        		feeds: [
+        			{
+        				title: "TA3",
+        				url: "http://www.ta3.com/rss/all/vsetky-novinky.html"
+        			},
+        			{
+        				title: "DenníkN",
+        				url: "http://www.dennikn.sk/minuta/feed/?cat=2386"
+        			},
+        			{
+        				title: "Pravda",
+        				url: "http://spravy.pravda.sk/rss/xml/"
+        			}
+        		],
+        		showSourceTitle: true,
+        		showPublishDate: true,
+        		broadcastNewsFeeds: true,
+        		broadcastNewsUpdates: true,
+        		ignoreOldItems: true,
+        		showDescription: true
+        	}
+        },
         // {
         // 	module: "MMM-Facial-Recognition",
         // 	config: {

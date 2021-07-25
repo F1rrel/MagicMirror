@@ -25,6 +25,16 @@
 	"NW": "SZ",
 	"NNW": "SSZ",
 
+	"FEELS": "Pocitová teplota {DEGREE}",
+	"PRECIP": "Dážď",
+
+	"MODULE_CONFIG_CHANGED": "Konfigurácia modulu {MODULE_NAME} bola zmenená.\nProsím skontrolujte dokumentáciu.",
+	"MODULE_CONFIG_ERROR": "Chyba v module {MODULE_NAME}. {ERROR}",
+	"MODULE_ERROR_MALFORMED_URL": "Neznáma url.",
+	"MODULE_ERROR_NO_CONNECTION": "Nie je internetové pripojenie.",
+	"MODULE_ERROR_UNAUTHORIZED": "Chyba autorizácie.",
+	"MODULE_ERROR_UNSPECIFIED": "Skontroluj logy pre viac detailov.",
+
 	"UPDATE_NOTIFICATION": "Dostupná aktualizácia pre MagicMirror².",
 	"UPDATE_NOTIFICATION_MODULE": "Dostupná aktualizácia pre modul {MODULE_NAME}.",
 	"UPDATE_INFO_SINGLE": "Súčasná inštalácia je na vetve {BRANCH_NAME} pozadu o {COMMIT_COUNT} commit.",

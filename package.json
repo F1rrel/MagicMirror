@@ -46,9 +46,9 @@
 	"homepage": "https://magicmirror.builders",
 	"devDependencies": {
 		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-jest": "^24.3.6",
 		"eslint-plugin-jsdoc": "^35.4.0",
 		"eslint-plugin-prettier": "^3.4.0",
-		"eslint-plugin-jest": "^24.3.6",
 		"express-basic-auth": "^1.2.0",
 		"husky": "^6.0.0",
 		"jest": "27.0.5",
@@ -76,6 +76,7 @@
 		"express-ipfilter": "^1.2.0",
 		"feedme": "^2.0.2",
 		"helmet": "^4.6.0",
+		"html-entities": "^2.3.2",
 		"iconv-lite": "^0.6.3",
 		"module-alias": "^2.2.2",
 		"moment": "^2.29.1",
