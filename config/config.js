@@ -41,6 +41,13 @@ var config = {
             classes: "default everyone"
         },
         {
+            module: "MMM-Meniny",
+            position: "top_left",
+            config: {
+                message: "Dnes má meniny <i>$TODAY$</i>."
+            }
+        },
+        {
             module: "calendar",
             header: "Slovenské sviatky",
             position: "top_left",
