@@ -65,6 +65,8 @@ Temporary Items
 !/modules/README.md**
 !/modules/MMM-Meniny
 !/modules/MMM-Meniny/**
+!/modules/MMM-Face-Detection
+!/modules/MMM-Face-Detection/**
 
 # # Ignore changes to the custom css files.
 # /css/custom.css

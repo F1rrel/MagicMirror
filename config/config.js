@@ -160,34 +160,21 @@ var config = {
         		showDescription: true
         	}
         },
-        // {
-        //     module: 'MMM-PIR-Sensor', 
-        //     position: "top_center", // Remove this line to avoid having an visible indicator
-        //     config: {
-        //         sensorPin: 23,
-        //         powerSavingDelay: 40, // Turn HDMI OFF after 60 seconds of no motion, until motion is detected again
-        //         preventHDMITimeout: 0, // Turn HDMI ON and OFF again every 4 minutes when power saving, to avoid LCD/TV timeout
-        //         supportCEC: false, 
-        //         powerSavingNotification: true,
-        //         powerSavingMessage: "Monitor prechádza do spánkového režimu",
-        //         presenceIndicator: "fa-eye", // Customizing the indicator
-        //         presenceOffIndicator: "fa-eye-slash", // Customizing the indicator
-        //         presenceIndicatorColor: "#f51d16", // Customizing the indicator
-        //         presenceOffIndicatorColor: "#2b271c", // Customizing the indicator
-        //     }
-        // }
-        // {
-        // 	module: "MMM-Facial-Recognition",
-        // 	config: {
-        // 		trainingFile: "modules/MMM-Facial-Recognition/training.xml",
-        // 		interval: 2,
-        // 		logoutDelay: 15,
-        // 		users: ["Filip"],
-        // 		defaultClass: "default",
-        // 		everyoneClass: "everyone",
-        // 		welcomeMessage: true
-        // 	}
-        // },
+        {
+            module: 'MMM-Face-Detection',
+            config: {
+                // force the use of a usb webcam on raspberry pi
+                useUSBCam: true,
+                // recognition interval in seconds (smaller number = faster but more CPU intensive!)
+                interval: 1,
+                // Notificaiton Delay after face stops being sensed (in seconds).
+                faceStopDelay: 60,
+                // Turn off display when no face is detected.
+                turnOffDisplay: true,
+                // When turnOffDisplay is True: support CEC to turn monitor ON or OFF as well, not just the HDMI circuit in the RPI.
+                supportCEC: false,
+            }
+        }
     ]
 
 };

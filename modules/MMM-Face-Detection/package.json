@@ -1,0 +1,25 @@
+{
+  "name": "Magic-Mirror-Module-Face-Detection",
+  "version": "0.1.0",
+  "description": "PiCam and Webcam Face Detection",
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "keywords": [
+    "magic mirror",
+    "smart mirror",
+    "face detection",
+    "module"
+  ],
+  "author": "Filip Stec",
+  "contributors": "",
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "python-shell": "latest"
+  }
+}
