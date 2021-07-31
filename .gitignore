@@ -63,6 +63,8 @@ Temporary Items
 !/modules/default
 !/modules/default/**
 !/modules/README.md**
+!/modules/MMM-Meniny
+!/modules/MMM-Meniny/**
 
 # # Ignore changes to the custom css files.
 # /css/custom.css
