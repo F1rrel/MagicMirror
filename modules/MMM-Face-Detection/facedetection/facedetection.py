@@ -113,7 +113,7 @@ def main():
                     face_eye_detected = True
                     break
 
-        to_node("status", "Face Detection: " + ("Face with eyes" if face_eye_detected else ("Face" if face_detected else "No face")))
+        # to_node("status", "Face Detection: " + ("Face with eyes" if face_eye_detected else ("Face" if face_detected else "No face")))
 
         if face_eye_detected:
             if last_detected is None:
