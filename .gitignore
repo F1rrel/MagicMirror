@@ -17,6 +17,8 @@ jspm_modules
 .npm
 .node_repl_history
 .nyc_output/
+core
+package-lock.json
 
 # Visual Studio Code ignoramuses.
 .vscode/
@@ -71,9 +73,10 @@ Temporary Items
 # # Ignore changes to the custom css files.
 # /css/custom.css
 
-# # Ignore users config file but keep the sample.
-# /config/*
-# !/config/config.js.sample
+# # Ignore users config file but keep the sample and template.
+/config/*
+!/config/config.js.sample
+!/config/config.template
 
 # Vim
 ## swap

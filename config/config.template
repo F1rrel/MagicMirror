@@ -49,13 +49,21 @@ var config = {
         },
         {
             module: "calendar",
-            header: "Slovenské sviatky",
+            header: "Rodinný kalendár",
             position: "top_left",
             classes: "default everyone",
             config: {
+                maximumEntries: 5,
+                dateFormat: "dd Do MMM",
+                fullDayEventDateFormat: "dd Do MMM",
                 calendars: [
                     {
-                        url: "https://calendar.zoznam.sk/icalendar/create-vcard-multiple.php?fName=sk&hy=<year>"
+                        url: "https://calendar.zoznam.sk/icalendar/create-vcard-multiple.php?fName=sk&hy=<year>",
+                        symbol: "calendar-day"
+                    },
+                    {
+                        url: "https://calendar.google.com/calendar/ical/mt4ghrjikn2puh5s0g6odrlcmk%40group.calendar.google.com/private-${FAMILY_CALENDAR_SECRET}/basic.ics",
+                        symbol: "house-user",
                     }
                 ]
             }
@@ -68,7 +76,7 @@ var config = {
                 type: "current",
                 location: "Bratislava",
                 locationID: "3060972",  //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
-                apiKey: "1486088161937d2d1e39359d6f48fd37",
+                apiKey: "${WEATHER_SECRET}",
                 lang: "sk"
             }
         },
@@ -81,23 +89,10 @@ var config = {
                 type: "daily",
                 location: "Bratislava",
                 locationID: "3060972",  //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
-                apiKey: "1486088161937d2d1e39359d6f48fd37",
+                apiKey: "${WEATHER_SECRET}",
                 lang: "sk"
             }
         },
-        /*{
-            module: "calendar",
-            header: "GMail",
-            position: "top_left",
-            classes: "Filip",
-            config: {
-                calendars: [
-                    {
-                        url: "https://calendar.google.com/calendar/ical/f.stec61%40gmail.com/private-9b488e1be3dbe390aa438a3f75bd2280/basic.ics"
-                    },
-                ]
-            }
-        },*/
         {
         	module: "compliments",
         	position: "lower_third",

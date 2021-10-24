@@ -1,0 +1,15 @@
+[Unit]
+Description=Magic Mirror
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=pi
+WorkingDirectory=/home/pi/MagicMirror/
+ExecStart=/home/pi/MagicMirror/installers/magicmirror_starter.sh
+
+[Install]
+WantedBy=multi-user.target

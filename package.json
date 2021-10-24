@@ -82,6 +82,7 @@
 		"moment": "^2.29.1",
 		"node-fetch": "^2.6.1",
 		"node-ical": "^0.13.0",
+		"shelljs": "^0.8.4",
 		"simple-git": "^2.40.0",
 		"socket.io": "^4.1.2"
 	},

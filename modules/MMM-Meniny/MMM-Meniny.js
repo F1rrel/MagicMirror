@@ -401,7 +401,7 @@ Module.register("MMM-Meniny", {
   getDom: function() {
     var message = this.config.message
     var todayKey = moment().format("MMDD")
-    console.log(todayKey)
+    // console.log(todayKey)
     var tomorrowKey = moment().add(1,'days').format("MMDD")
     var today = (typeof meniny[todayKey] !== "undefined") ? meniny[todayKey] : "undefined"
     var tomorrow = (typeof meniny[tomorrowKey] !== "undefined") ? meniny[tomorrowKey] : "undefined"

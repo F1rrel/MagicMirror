@@ -24,6 +24,7 @@ import sys
 import json
 import os
 import imutils
+import numpy as np
 
 def to_node(type, message):
     # convert to json and print (node helper will read from stdout)
@@ -81,6 +82,7 @@ def init():
 
 def main():
     last_detected = time.time()
+    to_node("face-detected", {})
 
     while True:
         # Sleep for x seconds specified in module config
@@ -90,32 +92,33 @@ def main():
 
         frame = imutils.resize(frame, width=500)
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+        gray = np.clip(gray * 4.0, 0, 255).astype(np.uint8)
 
         # perform face detection using the appropriate haar cascade
         faceRects = detectors["face"].detectMultiScale(
             gray, scaleFactor=1.05, minNeighbors=5, minSize=(30, 30),
             flags=cv2.CASCADE_SCALE_IMAGE)
-        
+
         face_detected = False
         face_eye_detected = False
         if len(faceRects) > 0:
             face_detected = True
-            # loop over the face bounding boxes
-            for (fX, fY, fW, fH) in faceRects:
-                # extract the face ROI
-                faceROI = gray[fY:fY+ fH, fX:fX + fW]
-                # apply eyes detection to the face ROI
-                eyeRects = detectors["eyes"].detectMultiScale(
-                    faceROI, scaleFactor=1.1, minNeighbors=10,
-                    minSize=(15, 15), flags=cv2.CASCADE_SCALE_IMAGE)
-
-                if len(eyeRects) > 0:
-                    face_eye_detected = True
-                    break
+#            # loop over the face bounding boxes
+#            for (fX, fY, fW, fH) in faceRects:
+#                # extract the face ROI
+#                faceROI = gray[fY:fY+ fH, fX:fX + fW]
+#                # apply eyes detection to the face ROI
+#                eyeRects = detectors["eyes"].detectMultiScale(
+#                    faceROI, scaleFactor=1.1, minNeighbors=10,
+#                    minSize=(15, 15), flags=cv2.CASCADE_SCALE_IMAGE)
+#
+#                if len(eyeRects) > 0:
+#                    face_eye_detected = True
+#                    break
 
         # to_node("status", "Face Detection: " + ("Face with eyes" if face_eye_detected else ("Face" if face_detected else "No face")))
 
-        if face_eye_detected:
+        if face_detected:
             if last_detected is None:
                 to_node("face-detected", {})
             last_detected = time.time()
