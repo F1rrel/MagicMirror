@@ -64,6 +64,10 @@ var config = {
                     {
                         url: "https://calendar.google.com/calendar/ical/mt4ghrjikn2puh5s0g6odrlcmk%40group.calendar.google.com/private-${FAMILY_CALENDAR_SECRET}/basic.ics",
                         symbol: "house-user",
+                    },
+                    {
+                        url: "https://calendar.google.com/calendar/ical/a39mv50haa9il6tmnier32t4r0%40group.calendar.google.com/private-${BIRTHDAY_CALENDAR_SECRET}/basic.ics",
+                        symbol: "birthday-cake",
                     }
                 ]
             }

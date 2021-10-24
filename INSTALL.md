@@ -17,6 +17,7 @@ Add there environment variables of config secrets
 ```
 [Service]
 Environment="FAMILY_CALENDAR_SECRET="
+Environment="BIRTHDAY_CALENDAR_SECRET="
 Environment="WEATHER_SECRET="
 ```
 
